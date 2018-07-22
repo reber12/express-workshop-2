@@ -71,14 +71,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>{{title}}</h1>
+                    <div class="page-heading">
+                        <h1>contact me</h1>
                         <hr class="small">
-                        <span class="subheading">A modern Website built in Node</span>
+                        <span class="subheading">Here is details of contact me</span>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,19 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            {{{body}}}
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <h1>Repos List From Github</h1>
+                <a class="btn btn-default" id="btnGetRepos" href="#" role="button">Get Repos List</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br />
+                <div id="reposInfo">
+                    <small>No Repos retrieved</small>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -136,10 +148,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
