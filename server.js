@@ -14,9 +14,7 @@ app.set("view engine", "handlebars");
 app.use(express.static("public", { extensions: ["html"] }));
 
 // what does this line mean: process.env.PORT || 3000
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Server is listening on port 3000. Ready to accept requests!");
-});
+
 app.get("/", (req, res) => {
   res.render("index", { title: "Daleel Page" });
 });
@@ -31,4 +29,7 @@ app.get("/my-cv", (req, res) => {
 });
 app.get("/contact", (req, res) => {
   res.render("contact", { titlte: "Etzali Contact" });
+});
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Server is listening on port 3000. Ready to accept requests!");
 });
